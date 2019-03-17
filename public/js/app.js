@@ -1,4 +1,3 @@
-console.log('client-side javascript file is loaded')
 const formEl = document.querySelector('form')
 const m1El = document.querySelector('#m1')
 const m2El = document.querySelector('#m2')
@@ -29,3 +28,4 @@ formEl.addEventListener('submit', (e) => {
 //         console.log(data.forecast)
 //     })
 // })
+
