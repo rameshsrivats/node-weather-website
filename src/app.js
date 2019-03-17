@@ -61,7 +61,7 @@ app.get('/weather', (req, res) => {
                     error: error
                 })
             } 
-            const forecast = `${wdata.summary} It is ${wdata.temperature} degrees with a ${wdata.rain}% chance of rain`
+            const forecast = `${wdata.summary} It is ${wdata.temperature} degrees currently, with a high today of ${wdata.max} and a low of ${wdata.min}. There is a ${wdata.rain}% chance of rain`
             res.send({
                 forecast,
                 location:data.location,
