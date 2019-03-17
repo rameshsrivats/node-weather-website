@@ -6,7 +6,7 @@ formEl.addEventListener('submit', (e) => {
     e.preventDefault()
     m1El.textContent = 'Loading...'
     m2El.textContent = ''
-    const url = 'http://localhost:3000/weather?address=' + e.target.elements[0].value
+    const url = '/weather?address=' + e.target.elements[0].value
     fetch(url).then((response) => {
         response.json().then((data) => {
             if (data.error) {
